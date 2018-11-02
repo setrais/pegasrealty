@@ -1,0 +1,43 @@
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, 
+var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, hr, button {
+	margin:0; 
+	padding:0; 
+	border:0; 
+	outline:0;
+	font-size:100%; 	
+	font-family: Arial, Tahoma, Geneva,  Helvetica, sans-serif Tahoma, Verdana, Geneva, Kalimati, Arial, Helvetica, sans-serif ;
+ 	vertical-align: baseline; 
+	background:none;
+}
+ol, ul{list-style:none;}
+
+blockquote, q{quotes:none;}
+q:before, q:after{content: "";}
+table{border-collapse:collapse; border-spacing:0;}
+input, textarea, select{
+	vertical-align:middle;
+	margin:0;
+	padding:0;
+}
+
+form, fieldset{border-style:none;}
+
+body{
+	background:url('images/bg-body.jpg');
+	font-size:12px; 
+	font-family: Tahoma, Arial, Geneva, Helvetica, sans-serif; 
+        min-width:1000px;
+	color:#333;
+}
+
+img{border-style:none;}
+a{color:#09c;}
+a:hover{text-decoration:none;}
+
+a p {text-decoration:underline;}
+a p :hover{text-decoration:none;}
+   
+/* end css reset */

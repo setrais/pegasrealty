@@ -1,0 +1,8 @@
+#map {
+    /*margin-left: 260px;*/
+}
+#map_canvas {
+    margin-top: 10px;
+    width: 530px;
+    height: 530px;
+}

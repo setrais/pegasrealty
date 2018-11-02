@@ -1,0 +1,22 @@
+.filter-block li .filter-btn, a#changeToNewAddress {
+    top: -1px;
+    position: relative;
+}
+a#changeToSelectAddress{
+
+}
+
+.filter-block li .filter-btn{
+    margin-top: 0px;
+}
+
+.beta{
+    position: absolute;
+    width: 260px; height: 170px;
+    top:-6px; left:-165px;
+    background: url(../../images/beta_2.png) right bottom no-repeat;
+    z-index: 1000;
+}
+.ui-button-icon-primary.ui-icon.ui-icon-triangle-1-s {
+    width: 284px !important;
+}

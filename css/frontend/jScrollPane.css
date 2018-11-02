@@ -1,0 +1,65 @@
+
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 10px!important;
+	background: url('../../images/scrollpane_bg_c.png') repeat-y 50% 0;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	*left: -5px;
+	cursor: pointer;
+	overflow: hidden;
+	background:url(../../images/drag.png) no-repeat center top;
+	width: 10px!important;
+	*width: 20px!important;
+	height:40px!important
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	background:url(../../images/scrollpane_bg_t.png) no-repeat center top;
+	width: 10px!important;
+	height:8px!important;
+}
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	background:url(../../images/scrollpane_bg_b.png) no-repeat center top;
+	width: 10px!important;
+	height:7px!important;
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}
