@@ -1,0 +1,48 @@
+body {
+    color: #222;
+    background: #fff;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    background: #F7F7F7;
+    color: #808080;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ac {
+    text-align: center;
+}
+.ar {
+    text-align: right;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a:focus, a:hover {
+    color: #222;
+    text-decoration: none;
+}
+
+a {
+    color: #169EA5;
+    text-decoration: underline;
+}
+
+ul, ol {
+    margin: 0 10px 10px 0;
+    padding-left: 10px;
+}
