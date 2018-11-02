@@ -1,0 +1,46 @@
+/* STANDARD */
+input[type=submit], input[type=button], .button {
+    background-color: #F5F5F5;
+    border: 1px solid #dedede;
+    border-top: 1px solid #eee;
+    border-left: 3px solid #6299c5;
+
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    margin: 0;
+}
+
+input[type=submit]:hover, input[type=button]:hover, .button:hover {
+    background-color: #dff4ff;
+    border: 1px solid #c2e1ef;
+    border-left: 3px solid #6299c5;
+    color: #336699;
+}
+
+input[type=submit]:active, input[type=button]:active, .button:active {
+    background-color: #6299c5;
+    border: 1px solid #6299c5;
+    border-left: 3px solid #6299c5;
+    color: #fff;
+}
+
+/* NEGATIVE */
+
+input[type=submit].negative, input[type=button].negative, .button.negative {
+    background-color: #fbecec;
+    border: 1px solid #fbc2c4;
+    border-left: 3px solid #d12f19;
+}
+
+input[type=submit].negative:hover, input[type=button].negative:hover, .button.negative:hover {
+    color: #d12f19;
+    background-color: #fbe3e4;
+    border: 1px solid #f6a7aa;
+    border-left: 3px solid #d12f19;
+}
+
+input[type=submit].negative:active, input[type=button].negative:active, .button.negative:active {
+    background-color: #d12f19;
+    border: 1px solid #d12f19;
+    color: #fff;
+}

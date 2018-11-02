@@ -1,0 +1,19 @@
+.tipsy { font-size: 10px; position: absolute; padding: 5px; z-index: 100000;min-width: 350px }
+.tipsy-inner { 
+
+background-color: #fff; color: #000;padding: 5px 8px 4px 8px; border: 2px solid #d4d2d2;
+border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; 
+box-shadow:-5px 0 8px #bcbaba; -webkit-box-shadow: -5px 0 8px #bcbaba; -moz-box-shadow: -5px 0 8px #bcbaba; 
+}
+
+.tipsy-arrow{position: relative;height:39px;z-index: 100001;}
+
+.tipsy-r .tipsy-inner{margin-left: 26px}
+.tipsy-l .tipsy-inner{margin-right: 16px}
+
+.tipsy-r .tipsy-arrow{width:28px}
+.tipsy-l .tipsy-arrow{width: 25px}
+
+
+.tipsy-tr,.tipsy-tl,.tipsy-fr,.tipsy-fl{float: left;width:50%}
+.cls{clear: both}

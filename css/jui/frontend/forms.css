@@ -1,0 +1,97 @@
+div.front-form input[type=text], div.front-form input[type=password], div.front-form textarea {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: auto;
+    background: none;
+    font-size: 14px;
+    height: auto;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+div.front-form select.multiselect {
+    width: 450px;
+}
+
+div.front-form input[type=file] {
+    vertical-align: top;
+}
+
+
+
+div.front-form div.form div.errorSummary {
+    background: #fff;
+    border: 2px solid #c44b4b;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+div.front-form div.form div.errorSummary p {
+    font-weight: bold;
+}
+div.front-form div.form div.errorSummary ul li {
+    list-style-type: none;
+}
+div.front-form div.form input.error, div.front-form div.form textarea.error {
+    border: 1px solid #c44b4b;
+}
+div.front-form div.form div.errorMessage {
+    color: #c44b4b;
+    font-size: 12px;
+}
+
+div.front-form div.form {
+    /*background: url(../../images/form_bg.png) repeat-x;*/
+}
+
+div.front-form div.form div.row {
+    clear: left;
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+div.front-form div.form > div.row > label {
+    display: block;
+    float: left;
+    padding-right: 10px;
+    width: 250px;
+    text-align: right;
+}
+
+div.front-form div.form > div.row > div.row-without-label {
+    margin-left: 255px;
+}
+
+div.front-form fieldset {
+    border: 1px solid #eee;
+    margin: 10px;
+}
+div.front-form fieldset legend {
+    background-color: #eee;
+    margin-left: 10px;
+    padding: 5px 20px 5px 20px;
+}
+div.front-form fieldset div.form {
+    margin: 0px;
+}
+div.front-form fieldset div.form div.row.buttons {
+    border-bottom: 0px;
+}
+
+
+
+div.front-form  div.form > div.row.checkbox-row > label{
+    display: inline;
+    float: none;
+    padding-right: 10px;
+}
+div.front-form div.form > div.row.checkbox-row input{
+    width: auto;
+    margin-left: 240px;
+    margin-right: 10px;
+}
+
+div.front-form div.form div.row.hidden-row{
+    display: none;
+}

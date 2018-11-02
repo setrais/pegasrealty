@@ -1,0 +1,111 @@
+input[type=text], input[type=password], textarea {
+    border: 1px solid #ccc;
+    padding: 5px;
+
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+select.multiselect {
+    width: 450px;
+}
+
+input[type=file] {
+    vertical-align: top;
+}
+
+
+
+div.form div.errorSummary {
+    background: #fff;
+    border: 2px solid #c44b4b;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+div.form div.errorSummary p {
+    font-weight: bold;
+}
+div.form div.errorSummary ul li {
+    list-style-type: none;
+}
+div.form input.error, div.form textarea.error {
+    border: 1px solid #c44b4b;
+}
+div.form div.errorMessage {
+    color: #c44b4b;
+    font-size: 12px;
+}
+
+div.form {
+    background: url(../../images/form_bg.png) repeat-x;
+}
+
+div.form div.row {
+    clear: left;
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+div.form > div.row > label {
+    display: block;
+    float: left;
+    padding-right: 10px;
+    width: 250px;
+    text-align: right;
+}
+
+div.form > div.row > div.row-without-label {
+    margin-left: 255px;
+}
+
+
+#login-form {
+    border: 2px solid #ccc;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#login-form label {
+    display: block;
+    float: left;
+    padding-right: 10px;
+    width: 150px;
+    text-align: right;
+}
+#login-form #LoginForm_username, #login-form #LoginForm_password {
+    width: 150px;
+}
+#login-form #LoginForm_submit {
+    width: 100px;
+}
+#login-form div.row.buttons {
+    text-align: center;
+    border-bottom: none;
+}
+
+
+
+fieldset {
+    border: 1px solid #eee;
+    margin: 10px;
+}
+fieldset legend {
+    background-color: #eee;
+    margin-left: 10px;
+    padding: 5px 20px 5px 20px;
+}
+fieldset div.form {
+    margin: 0px;
+}
+fieldset div.form div.row.buttons {
+    border-bottom: 0px;
+}
+
+div.wide.form .row .radioButtonList, div.wide.form .row .checkBoxList, div.wide.form .row .padding-to-column2 { margin-left: 260px; }
+div.wide.form .row .radioButtonList label, div.wide.form .row .checkBoxList label { float: none; display: inline; }
+div.wide.form .row .radioButtonList input[type='radio'], div.wide.form .row .checkBoxList input[type='checkbox'],
+div.wide.form .row .radioButtonList .niceRadio { /*clear: left;*/ }
