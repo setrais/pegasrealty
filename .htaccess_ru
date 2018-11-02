@@ -1,0 +1,268 @@
+Order Allow,Deny 
+Allow from all
+Deny from 2a00:1210:fffe:92::1
+Deny from 2a01:4f8:162:1129::2
+#user
+Deny from 5.44.172.193
+#user
+Deny from 37.55.79.184
+Deny from 37.115.186.0 
+Deny from 37.139.52.23
+#SemrushBot
+Deny from 46.229.164
+#user
+Deny from 46.39.230.29
+Deny from 89.223.47.211
+#av-host.net
+Deny from 46.118.154.155
+Deny from 46.119.113.188
+Deny from 46.161.41.199
+Deny from 46.175.192.141
+#jimbo.by
+Deny from 46.118.154.155
+#Deny from 46.200.156.150 
+#user
+Deny from 54.154.237.207
+#user
+Deny from 54.154.164.165
+Deny from 54.154.144.182
+#Ruby
+Deny from 54.145.19.226 
+Deny from 54.161.106.59
+#Deny from 95-24-216-84.broadband.corbina.ru
+Deny from 66.119.41.34 
+Deny from 68.67.74.205
+Deny from 78.68.122.91 
+Deny from 78.110.56
+Deny from 78.110.57
+Deny from 78.110.58
+Deny from 78.110.59
+Deny from 78.110.60
+Deny from 78.110.60.230
+Deny from 78.110.61 
+Deny from 78.110.62
+Deny from 78.110.63
+Deny from 82.189.190.169
+#7zap.com
+Deny from 82.193.99.33
+Deny from 83.149.47.164
+Deny from 88.198.209.6
+Deny from 91.105.14.222 
+Deny from 91.207.8.46
+#user
+#Deny from 91.207.106.252 
+Deny from 92.242.35.54
+Deny from 92.243.166.10
+#user
+Deny from 95.163.121.48
+Deny from 96.44.163.50
+#Deny from 95.46.
+Deny from 109.87.231.183
+#doska-vsem.ru
+Deny from 109.120.157.179
+#user
+Deny from 141.136.115.41
+Deny from 148.251
+Deny from 129.10.115.51
+Deny from 173.199.116.211
+Deny from 176.99.7.147 
+Deny from 176.196.32.198
+#user
+Deny from 178.204.207.92
+#brutforyou.blogspot.com
+Deny from 195.242.218.133
+Deny from 195.91.201.230
+Deny from 194.114.133.131
+#haker
+Deny from 91.237.20.200
+Deny from 178.137.84.200
+Deny from 178.255.215.75
+#haker
+Deny from 188.165.242.77
+
+Deny from 188.163.80.167
+Deny from 198.148.27
+#BLEXBot
+Deny from 198.143.132.146
+Deny from 208.115.96.0/24
+Deny from 208.115.97.0/24
+Deny from 208.115.98.0/24
+Deny from 208.115.99.0/24
+Deny from 208.115.100.0/24
+Deny from 208.115.101.0/24
+Deny from 208.115.102.0/24
+Deny from 208.115.103.0/24
+Deny from 208.115.104.0/24
+Deny from 208.115.105.0/24
+Deny from 208.115.106.0/24
+Deny from 208.115.107.0/24
+Deny from 208.115.108.0/24
+Deny from 208.115.109.0/24
+Deny from 208.115.110.0/24
+Deny from 208.115.111.0/24
+Deny from 208.115.112.0/24
+Deny from 208.115.113.0/24
+Deny from 208.115.114.0/24
+Deny from 208.115.115.0/24
+Deny from 208.115.116.0/24
+Deny from 208.115.117.0/24
+Deny from 208.115.118.0/24
+Deny from 208.115.119.0/24
+Deny from 208.115.120.0/24
+Deny from 208.115.121.0/24
+Deny from 208.115.122.0/24
+Deny from 208.115.123.0/24
+Deny from 208.115.124.0/24
+Deny from 208.115.125.0/24
+Deny from 208.115.126.0/24
+Deny from 208.115.127.0/24
+Deny from 209.133.111.215
+#php_value display_errors Off
+#php_value log_errors On
+#php_value register_globals Off
+#php_value safe_mode On
+#php_flag magic_quotes_gpc 0
+#php_flag magic_quotes_runtime 0
+
+<IfModule mod_negotiation.c>
+AddDefaultCharset utf-8
+# AddDefaultCharset windows-1251
+</IfModule>
+
+#<IfModule mod_mime.c>
+#  AddType application/x-httpd-php .ico
+#  AddDefaultCharset windows-1251
+#   AddDefaultCharset UTF-8
+#</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php
+</IfModule>
+
+#<IfModule mod_expires.c>
+#  ExpiresActive on
+#  ExpiresByType image/jpeg "access plus 3 day"
+#  ExpiresByType image/gif "access plus 3 day"
+#</IfModule>
+
+#php_flag allow_call_time_pass_reference 1
+#php_flag session.use_trans_sid off
+#php_value session.save_path /tmp
+
+<IfModule mod_rewrite.c>
+
+    #SetEnvIfNoCase ^User-Agent$ .*(bot1|bot2|bot3|bot4|bot5|bot6|) HTTP_SAFE_BADBOT
+    #SetEnvIfNoCase ^User-Agent$ .*(bot1|bot2|bot3|bot4|bot5|bot6|) HTTP_SAFE_BADBOT
+    #Deny from env=HTTP_SAFE_BADBOT
+
+    # deny access to the top-level git repository:
+    RewriteEngine On
+    RewriteRule \.git - [F,L] 
+
+    RewriteEngine On
+    RewriteCond %{HTTP_REFERER} 9157481813.ru [NC,OR]
+    RewriteCond %{HTTP_REFERER} b-motor\.ru [NC,OR]
+    RewriteCond %{HTTP_REFERER} b-motor\.info [NC,OR]
+    RewriteCond %{HTTP_REFERER} erot\.co [NC,OR]
+    RewriteCond %{HTTP_REFERER} lombia\.co [NC,OR]
+    RewriteCond %{HTTP_REFERER} lumb\.co [NC,OR]
+    RewriteCond %{HTTP_REFERER} co\.lumb\.co [NC,OR]
+    RewriteCond %{HTTP_REFERER} ilovevitaly\.ru [NC,OR]
+    RewriteCond %{HTTP_REFERER} iskalko\.ru [NC,OR]
+    RewriteCond %{HTTP_REFERER} "viagra|cialis|phentermine" [NC]
+    RewriteRule .* - [F,L,E=spam:refspam]
+
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} AhrefsBot
+    RewriteRule ^.* - [F,L]
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} FeedBurner
+    RewriteRule ^.* - [F,L]
+    #RewriteEngine On
+    #RewriteCond %{HTTP_USER_AGENT} AppleWebKit
+    #RewriteRule ^.* - [F,L]
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} MJ12bot
+    RewriteRule ^.* - [F,L]
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} SMTBot
+    RewriteRule ^.* - [F,L]
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} TurnitinBot
+    RewriteRule ^.* - [F,L]
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} Riddler
+    RewriteRule ^.* - [F,L]
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} SemrushBot
+    RewriteRule ^.* - [F,L]
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} Exabot
+    RewriteRule ^.* - [F,L]
+    RewriteEngine On
+    RewriteCond %{HTTP_USER_AGENT} SputnikBot
+    RewriteRule ^.* - [F,L]
+    RewriteEngine On
+    #RewriteCond %{HTTP_USER_AGENT} Firefox/2.0.0.13 [OR]
+    RewriteCond %{HTTP_USER_AGENT} Sleuth [OR]
+    RewriteCond %{HTTP_USER_AGENT} ezooms [OR]   
+    RewriteCond %{HTTP_USER_AGENT} proximic [OR]
+    RewriteCond %{HTTP_USER_AGENT} Baiduspider [OR]
+    RewriteCond %{HTTP_USER_AGENT} Lightspeedsystems [OR]
+    RewriteCond %{HTTP_USER_AGENT} SearchBot [OR]
+    RewriteCond %{HTTP_USER_AGENT} parser3 [OR]
+    RewriteCond %{HTTP_USER_AGENT} Wget [OR]
+    RewriteCond %{HTTP_USER_AGENT} SISTRIX [OR]
+    RewriteCond %{HTTP_USER_AGENT} LinkpadBot [OR]
+    RewriteCond %{HTTP_USER_AGENT} Wotbox [OR]
+    RewriteCond %{HTTP_USER_AGENT} DotBot [OR]
+    RewriteCond %{HTTP_USER_AGENT} AntivirusPro [OR]
+    RewriteCond %{HTTP_USER_AGENT} Insitesbot [OR]
+    RewriteCond %{HTTP_USER_AGENT} GroupHigh [OR]
+    RewriteCond %{HTTP_USER_AGENT} SemrushBot [OR]
+    RewriteCond %{HTTP_USER_AGENT} ContextAd [OR]
+    RewriteCond %{HTTP_USER_AGENT} HaosouSpider [OR]
+    RewriteCond %{HTTP_USER_AGENT} SV1 [OR]
+    RewriteCond %{HTTP_USER_AGENT} BLEXBot [OR]
+    RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+    RewriteCond %{HTTP_USER_AGENT} mbot 
+    RewriteRule ^.* - [F,L]
+    RewriteEngine on
+    RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semalt.com.*$ [NC]
+    RewriteRule .* http://semalt.com [L]
+    RewriteEngine on
+    RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semalt.semalt.com.*$ [NC]
+    RewriteRule .* http://semalt.com [L]
+    RewriteEngine on
+    RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?crawler.semalt.com.*$ [NC]
+    RewriteRule .* http://semalt.com [L]
+
+    RewriteEngine on 
+    #RewriteCond %{HTTP_HOST} !^pegasrealty\.ru$ [NC,OR] замена pegasrealty\.ru\.      
+    RewriteCond %{HTTP_HOST} ^www.pegasrealty\.ru$ [NC,OR]    
+    RewriteCond %{HTTP_HOST} ^www.pegasrealty\.com$ [NC,OR]
+    RewriteCond %{HTTP_HOST} ^pegasrealty\.com$ [NC,OR]    
+    RewriteCond %{HTTP_HOST} ^scorp666.tmweb\.ru$ [NC,OR]
+    RewriteCond %{HTTP_HOST} ^www.scorp666.tmweb\.ru$ [NC] 
+    RewriteRule ^(.*)$ http://pegasrealty.ru/$1 [R=301,L] 
+
+    #RewriteCond %{HTTP_HOST} ^pegasrealty.ru$ [NC]       
+    #RewriteRule ^index.php/ru/(.*) /$1 [R=301,L] 
+
+    #RewriteCond %{HTTP_HOST} ^pegasrealty.ru$ [NC]       
+    #RewriteRule ^index.php/(.*) /$1 [R=301,L] 
+
+    #RewriteCond %{HTTP_HOST} ^pegasrealty.ru$ [NC]       
+    #RewriteRule ^ru/(.*)$ /$1 [R=301,L] 
+
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #otherwise forward it to index.php
+    #RewriteRule . index.php
+
+    RewriteCond $1 !^(index\.php|bax.php|robots\.txt|google9669ffc2199cd9b9\.html|favicon\.ico|skin|third_party|jcpost|contact-us|awstats)        
+    RewriteRule ^(.*)$ ./index.php/$1 [L] 
+
+    #RewriteRule ^index.php/(.*) ./$1 [R=301,L]  
+    #RewriteRule ^(.+)$ index.php?$1 [PT,L,QSA]
+</IfModule>  

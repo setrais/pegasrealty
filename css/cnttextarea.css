@@ -1,0 +1,28 @@
+/* 
+    Document   : cnttextarea
+    Created on : 27.01.2014, 16:52:21
+    Author     : setrais
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.counter {width: 82px; margin: 0; padding: 0 0 0 4px}
+.counter SPAN {padding: 1px 0; font: bold 10px 'MS Sans Serif', serif}
+.counter .min {color: #4aa24c}
+.counter .max {color: #c2311a}
+.counter .gray {color: #ccc}
+.counter .red {color: #f00}
+.counter .normal {color: #000} 
+
+form .cnttextarea{
+   /*position:absolute;
+   right:0;
+   top:0;*/
+   font-size: 11px;
+   font-weight: bold;   
+   text-align: right;
+   width: 99%;
+   display: block;
+}
+form .wartextarea{color:#600;}
+form .exctextarea{color:#e00;}
