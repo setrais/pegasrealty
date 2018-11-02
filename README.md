@@ -1,1 +1,1 @@
-Test test pegasrealty.loc 
+Test pegasrealty.loc 
