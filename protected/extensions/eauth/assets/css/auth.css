@@ -1,0 +1,59 @@
+
+.auth-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/auth2.png") no-repeat;
+}
+
+.auth-icon.google, 
+.auth-icon.google_oauth { background-position: 0 -17px;  }
+.auth-icon.twitter		{ background-position: 0 -34px;  }
+.auth-icon.yandex		{ background-position: 0 -51px; }
+.auth-icon.vkontakte	{ background-position: 0 -68px; }
+.auth-icon.facebook		{ background-position: 0 -85px; }
+.auth-icon.mailru		{ background-position: 0 -102px; }
+
+a:hover .auth-icon i,
+a.auth-icon:hover  i,
+a:focus .auth-icon i,
+a.auth-icon:focus  i {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/auth2.png") 0 0 no-repeat;
+}
+
+ul.auth-services {
+    margin: 0 0 1em;
+    list-style: none;
+}
+    
+ul.auth-services li {
+    float: left;
+    margin: 0 1em 0 0;
+}
+      
+ul.auth-services li a {
+    display: block;
+    width: 95px;
+    padding-top: 10px;
+    /*padding: 0 0.4em;*/
+}
+ul.auth-services li a span span{
+    padding-left: 25px;
+}
+ul.auth-services li a span span:hover{
+    text-decoration: underline;
+}
+
+ul.auth-services li a .auth-icon {
+    /*margin: 0 auto;*/
+    margin-left: 10px;
+}
+          
+ul.auth-services li a .auth-title {
+    display: block;
+    margin-top: 0.4em;
+    text-align: center;
+}

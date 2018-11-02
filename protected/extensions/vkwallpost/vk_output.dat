@@ -1,0 +1,34 @@
+
+<div id="head"><a href="/"><img alt="В Контакте" width="77" height="21" src="images/xheadpda2.gif"/></a></div>
+<div id="content">
+
+    <div class="pad nopadt">
+      <div class="menu2">
+        <div><a href="/id145938302">Моя Страница</a></div>
+        <div><a href="/friends">Мои Друзья</a></div>
+        <div><a href="albums">Мои Фотографии</a></div>
+        <div><a href="/inbox">Мои Сообщения</a></div>
+        <div><a href="/fave">Мои Закладки</a></div>
+        <div><a href="/news">Мои Новости</a></div>
+        <div><a href="/notes">Мои Заметки</a></div>
+        <div><a href="/groups">Мои Группы</a></div>
+        <div><a href="/events">Мои Встречи</a></div>
+        
+        <div><a href="/settings">Настройки</a></div>
+        <div><a href="/logout">Выход</a></div>
+      </div>
+      <div class="quicksearch">
+        <form action="/quicksearch" method="get">
+          <input type="text" name="q" /><input type="submit" value="Поиск" />
+        </form>
+      </div>
+      <div class="ads"></div>
+            <div class="fullversion">
+        <a href="http://vkontakte.ru/">Полная версия</a>
+      </div>
+    </div>
+    
+<div id="bottomMenu"></div>
+</div>
+</body>
+</html>
