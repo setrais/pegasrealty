@@ -1,1 +1,1 @@
-Test pegasrealty.loc 
+O проекте - pegasrealty.loc 
